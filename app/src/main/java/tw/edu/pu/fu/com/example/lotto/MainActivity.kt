@@ -1,6 +1,7 @@
 package tw.edu.pu.fu.com.example.lotto
 
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,5 +23,9 @@ class MainActivity : AppCompatActivity() {
         txv.text = "0"
 
     }
+    fun happy(v: View){
+        var txv: TextView = findViewById(R.id.txv)
+        txv.text = (1..100).random().toString()
 
+    }
 }
